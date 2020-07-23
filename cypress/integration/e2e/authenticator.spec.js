@@ -1,5 +1,6 @@
 // Update these constants to match whatever username and password you
-// created your user with
+// created your user with 
+//changed the pwd
 const USERNAME = "qa1980";
 const PASSWORD = "test1234";
 
