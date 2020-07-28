@@ -59,8 +59,24 @@ describe("Authenticator:", function () {
      // cy.get("amplify-sign-out")
        // .find(selectors.signOutButton, { includeShadowDom: true })
         //.contains("Sign Out");
+      it('control erver verification', ()=>{
+            cy.server().should((server) => {
+                // the default options on server
+                // you can override any of these options
+                expect(server.delay).to.eq(0)
+                expect(server.method).to.eq('GET')
+                expect(server.status).to.eq(200)
+                expect(server.headers).to.be.null
+                expect(server.response).to.be.null
+                expect(server.onRequest).to.be.undefined
+                expect(server.onResponse).to.be.undefined
+                expect(server.onAbort).to.be.undefined
+            }); 
+      
     });
   });
+ 
+});
 });
 
 export const selectors = {
