@@ -14,6 +14,19 @@ describe("Authenticator:", function () {
   });
 
   describe("Sign In:", () => {
+    it('control Server verification', ()=>{
+            cy.server().should((server) => {
+                // the default options on server
+                // you can override any of these options
+                expect(server.delay).to.eq(0)
+                expect(server.method).to.eq('GET')
+                expect(server.status).to.eq(200)
+                expect(server.headers).to.be.null
+                expect(server.response).to.be.null
+                expect(server.onRequest).to.be.undefined
+                expect(server.onResponse).to.be.undefined
+                expect(server.onAbort).to.be.undefined
+            })
     it("allows a user to signin", () => {
       // Step 2: Usually we can use cy.get to go locate the
       // button or field that we want to action directly, but
@@ -59,19 +72,7 @@ describe("Authenticator:", function () {
      // cy.get("amplify-sign-out")
        // .find(selectors.signOutButton, { includeShadowDom: true })
         //.contains("Sign Out");
-      it('control erver verification', ()=>{
-            cy.server().should((server) => {
-                // the default options on server
-                // you can override any of these options
-                expect(server.delay).to.eq(0)
-                expect(server.method).to.eq('GET')
-                expect(server.status).to.eq(200)
-                expect(server.headers).to.be.null
-                expect(server.response).to.be.null
-                expect(server.onRequest).to.be.undefined
-                expect(server.onResponse).to.be.undefined
-                expect(server.onAbort).to.be.undefined
-            }); 
+      
       
     });
   });
