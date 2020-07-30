@@ -11,6 +11,7 @@ describe("Authenticator:", function () {
   // "http://localhost:3000/"
   beforeEach(function () {
     cy.visit("/");
+    
   });
 
   describe("Sign In:", () => {
@@ -59,6 +60,7 @@ describe("Authenticator:", function () {
      // cy.get("amplify-sign-out")
        // .find(selectors.signOutButton, { includeShadowDom: true })
         //.contains("Sign Out");
+        
     });
   });
 });
