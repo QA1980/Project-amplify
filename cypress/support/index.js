@@ -18,3 +18,6 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+//Unit test 
+//require('cypress-react-unit-test/support')
+import 'cy-mobile-commands'

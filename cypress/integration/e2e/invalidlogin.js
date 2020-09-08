@@ -1,6 +1,3 @@
-import { first } from "cypress/types/lodash";
-
-const { selectors } = require("./authenticator.spec");
 
 const USERNAME = "qa1980";
 const PASS = "test12345";
