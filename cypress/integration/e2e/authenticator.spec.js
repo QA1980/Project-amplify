@@ -9,6 +9,7 @@ describe("Authenticator:", function () {
   // Note that this takes into account the base url that we
   // already configured. So the final address will be
   // "http://localhost:3000/"
+  
   beforeEach(function () {
     cy.visit("/");
     
