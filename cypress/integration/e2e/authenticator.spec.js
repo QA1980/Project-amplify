@@ -6,7 +6,7 @@ const PASSWORD = "test1234";
 
 describe("Authenticator:", function () {
   // Step 1: before each test, we want to visit our app.
-  // Note that this takes into account the base url that we
+  // Note that this takes into account the base url that we///////
   // already configured. So the final address will be
   // "http://localhost:3000/"
   //test
