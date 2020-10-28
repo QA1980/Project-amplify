@@ -17,7 +17,7 @@ describe("Authenticator:", function () {
   });
 
   describe("Sign In:", () => {
-    it('control Server verification', ()=>{
+    it('control Server verification responses', ()=>{
             cy.server().should((server) => {
                 // the default options on server
                 // you can override any of these options
