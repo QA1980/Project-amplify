@@ -1,6 +1,6 @@
 {
   "baseUrl": "http://localhost:3000",
   "experimentalShadowDomSupport": true,
-  "projectId": "5iiqb1"
- 
+  "projectId": "5iiqb1",
+ "numTestsKeptInMemory": 1
 }
