@@ -21,3 +21,4 @@ import './commands'
 //Unit test 
 //require('cypress-react-unit-test/support')
 import 'cy-mobile-commands'
+import '@cypress/code-coverage/support'
